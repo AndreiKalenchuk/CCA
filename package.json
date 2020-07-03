@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "wdio wdio.conf.js",
     "test": "npm run clean && wdio wdio.conf.js && npm run report",
-    "report": "allure generate --clean && allure open",
-    "clean": "rimraf allure-results"
+    "clean": "rimraf allure-results",
+    "report": "allure generate --clean && allure open"
   },
   "keywords": [],
   "author": "",
