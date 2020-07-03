@@ -99,6 +99,7 @@ describe('Complex Counter App', function () {
             const elementsList = $$(selectorsCnt.blackBtn);
             elementsList.forEach(el => expect(el).toBeDisplayed(),
                 {message: `black button not Displayed on a page`});
+            expect(elementsList).toHaveLength(expectedCnt.defaultNumberBlackBtn);
         })
 
         it('TC-021 Label for Default Value Field', function () {
