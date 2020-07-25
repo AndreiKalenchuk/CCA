@@ -14,16 +14,17 @@ function createRandomFromRange() {
 }
 
 const createRandomInputInt = function () {
-    const min = createRandomFromRange()
-    const max = createRandomFromRange();
+    const num1 = createRandomFromRange()
+    const num2 = createRandomFromRange();
     let randomULF;
     let randomLLF;
-    if (max <= min) {
-        randomULF = min
-        randomLLF = max;
+
+    if (num2 <= num1) {
+        randomULF = num1
+        randomLLF = num2;
     } else {
-        randomULF = max
-        randomLLF = min;
+        randomULF = num2
+        randomLLF = num1;
     }
     return {
         ULF: randomULF,
